@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+.weatherApp{
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+    opacity: 1;
+    transition: 500ms;
+}
+
+.weatherApp::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 0;
+}
+
+.video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*------------------------------Container----------------------------------*/
+
+.weatherApp .container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2em 3em 4em 3em;
+}
+
+.weatherApp .container .digitalWatch span{
+    font-size: 3em;
+}
+
+.weatherApp .container .cityTemp .container-temp{
+    display: flex;
+}
+
+.weatherApp .container .cityTemp .container-temp div,
+.weatherApp .container .cityTemp .container-temp span {
+    font-size: 7em;
+    margin: 0;
+}
+
+
+.weatherApp .container .cityTemp .city{
+    margin-bottom: 0.2em;
+    margin-left: 30px;
+    font-size: 3em;
+    font-weight: 5000;
+}
+
+.weatherApp .container .cityTemp .date{
+    margin-left: 30px;
+    font-size: 1.5em;
+}
+
+
+.weatherApp .container .cityTemp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherApp .container .cityTemp .container-img{
+    margin-left: 40px;
+}
+
+
+/*------------------------------Painel----------------------------------*/
+
+.weatherApp .panel{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgba(110,110,110,0.25);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.4);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.20);
+    z-index: 1;
+    padding: 3em 2em;
+    overflow-y: scroll;
+    /*color: black;*/
+}
+
+.panel .input-group{
+    margin-bottom: 3em;
+}
+
+.submit{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5em;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: #fa6d1b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: 0.4s;
+}
+
+.submit:hover{
+    background: #fff !important;
+    color: #000;
+}
+
+.form-control{
+    background: none;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    padding:  0 1em 0.5em 0;
+    width: 80%;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.form-control:focus{
+    outline: none;
+}
+
+.form-control::placeholder{
+    color: #ccc;
+}
+
+.panel ul{
+    padding:  0 0 1em 0;
+    margin: 2em 0;
+    border-bottom: 1px #ccc solid;
+}
+
+.panel ul li{
+    list-style: none;
+    color: #ccc;
+    margin: 2.5em 0;
+    font-size: 18px;
+    font-weight: 1000;
+}
+
+
+.panel ul h4{
+    margin: 3em 0;
+}
+
+
+.details li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*-------------------------------------*/
+@media screen and (max-width: 1050px){
+    .weatherApp .container .cityTemp .container-temp div,
+    .weatherApp .container .cityTemp .container-temp span {
+    font-size: 5em;
+    }
+    .weatherApp .container .cityTemp .city{
+        margin-bottom: 0.4em;
+        margin-left: 10px;
+        font-size: 2em;
+    }
+    
+    .weatherApp .container .cityTemp .date{
+        margin-left: 10px;
+        font-size: 1em;
+    }
+    .weatherApp .panel{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .weatherApp .panel{
+        position: absolute;
+        width: 100%;
+        height: 55%;
+    }
+    .weatherApp .container .digitalWatch span{
+        display: none;
+    }
+    .weatherApp .container .cityTemp .city{
+        margin-left: 30px;
+    }
+    .weatherApp .container .cityTemp .date{
+        margin-left: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 500px){
+    html{
+        font-size: 12px;
+    }
+    .weatherApp .panel{
+        height: 50%;
+    }
+    .panel ul li{
+        font-size: 12px;
+    }
+    .weatherApp .container .cityTemp {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .weatherApp .container .cityTemp .container-temp{
+        margin: auto;
+    }
+    .weatherApp .container .cityTemp .container-city{
+        margin: auto;
+    }
+    .weatherApp .container .cityTemp .container-img{
+        margin: auto;
+    }
+    .weatherApp .container .cityTemp .city{
+        margin-left: 0;
+        padding: 0;
+    }
+    .weatherApp .container .cityTemp .date{
+        margin-left: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 325px){
+    .weatherApp .container .cityTemp .container-temp div,
+    .weatherApp .container .cityTemp .container-temp span {
+    font-size: 4em;
+    }
+    .weatherApp .container .cityTemp .city{
+        font-size: 1.3em;
+    }
+    
+    .weatherApp .container .cityTemp .date{
+        font-size: 0.8em;
+    }
+}

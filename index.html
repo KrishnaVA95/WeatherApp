@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="moveRelogio()">
+    <main class="weatherApp">
+        <video src="./videos/01n.mp4" autoplay muted loop class="video"></video>
+        <section class="container">
+            <div  class="digitalWatch">
+                <span id="h"></span><span class="doisPontos">:</span><span id="m"></span><span class="doisPontos">:</span><span id="s"></span>
+            </div>
+            <div class="cityTemp">
+                <div class="container-temp">
+                    <div>22</div>
+                    <span>°c</span>
+                </div>
+    
+                <div class="container-city">
+                    <div class="city">Cidade Exemplo, BR</div>
+                    <div class="date">Terça, 1 Dezembro 2022</div>
+                </div>
+
+                <div class="container-img">
+                    <img src="./icons/unknown.png">
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Digite o nome da cidade">
+                    <button type="submit" class="btn submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <ul class="details">
+                    <h4>Detalhes do Clíma</h4>
+    
+                    <li>
+                        <span>Humidade</span>
+                        <span class="humidity"></span>
+                    </li>
+    
+                    <li>
+                        <span>Vento</span>
+                        <span class="wind"></span>
+                    </li>
+                    <li>
+                        <span>Min/Max</span>
+                        <span class="low-high"></span>
+                    </li>
+                    
+                    <li>
+                        <span>Descrição</span>
+                        <span class="descriptionWeather"></span>
+                    </li>
+                </ul>
+            </div>
+            <script src="script.js"></script>
+        </section>
+    </main>
+</body>
+</html>
