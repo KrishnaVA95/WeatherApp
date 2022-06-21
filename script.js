@@ -95,109 +95,109 @@ function displayResults(weather) {
 
     //Mudandar vídeo, pelo icone -----------------------------------------------------
     if(iconName == "01d"){
-        document.querySelector('.video').src= '../videos/01d.mp4';
+        document.querySelector('.video').src= './videos/01d.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'black';
         }
     }else if(iconName == "01n"){
-        document.querySelector('.video').src= '../videos/01n.mp4';
+        document.querySelector('.video').src= './videos/01n.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'white';
         }
     }else if(iconName == "02d"){
-        document.querySelector('.video').src= '../videos/02d.mp4';
+        document.querySelector('.video').src= './videos/02d.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'black';
         }
     }else if(iconName == "02n"){
-        document.querySelector('.video').src= '../videos/02n.mp4';
+        document.querySelector('.video').src= './videos/02n.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'white';
         }
     }else if(iconName == "03d"){
-        document.querySelector('.video').src= '../videos/02d.mp4';
+        document.querySelector('.video').src= './videos/02d.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'black';
         }
     }else if(iconName == "03n"){
-        document.querySelector('.video').src= '../videos/02n.mp4';
+        document.querySelector('.video').src= './videos/02n.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'white';
         }
     }else if(iconName == "04d"){
-        document.querySelector('.video').src= '../videos/04d.mp4';
+        document.querySelector('.video').src= './videos/04d.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'black';
         }
     }else if(iconName == "04n"){
-        document.querySelector('.video').src= '../videos/04n.mp4';
+        document.querySelector('.video').src= './videos/04n.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'white';
         }
     }else if(iconName == "09d"){
-        document.querySelector('.video').src= '../videos/09d.mp4';
+        document.querySelector('.video').src= './videos/09d.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'black';
         }
     }else if(iconName == "09n"){
-        document.querySelector('.video').src= '../videos/10n.mp4';
+        document.querySelector('.video').src= './videos/10n.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'white';
         }
     }else if(iconName == "10d"){
-        document.querySelector('.video').src= '../videos/10d.mp4';
+        document.querySelector('.video').src= './videos/10d.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'white';
         }
     }else if(iconName == "10n"){
-        document.querySelector('.video').src= '../videos/10n.mp4';
+        document.querySelector('.video').src= './videos/10n.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'white';
         }
     }else if(iconName == "11d"){
-        document.querySelector('.video').src= '../videos/11d.mp4';
+        document.querySelector('.video').src= './videos/11d.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'black';
         }
     }else if(iconName == "11n"){
-        document.querySelector('.video').src= '../videos/11d.mp4';
+        document.querySelector('.video').src= './videos/11d.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'white';
         }
     }else if(iconName == "13d"){
-        document.querySelector('.video').src= '../videos/13d.mp4';
+        document.querySelector('.video').src= './videos/13d.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'black';
         }
     }else if(iconName == "13n"){
-        document.querySelector('.video').src= '../videos/13n.mp4';
+        document.querySelector('.video').src= './videos/13n.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'white';
         }
     }else if(iconName == "50d"){
-        document.querySelector('.video').src= '../videos/50d.mp4';
+        document.querySelector('.video').src= './videos/50d.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'black';
         }
     }else if (iconName == "50n"){
-        document.querySelector('.video').src= '../videos/50n.mp4';
+        document.querySelector('.video').src= './videos/50n.mp4';
         let ajusteCor = document.querySelectorAll('li')
         for(let i = 0; i < ajusteCor.length; i++){
             ajusteCor[i].style.color = 'white';
